@@ -5,6 +5,7 @@
     define("PASS","");
     define("DATABASE","jeux");
     
+    //cette classe permet la connexion avec la base de donnée
 class gestion_BD
 {	
 	private $bd;
