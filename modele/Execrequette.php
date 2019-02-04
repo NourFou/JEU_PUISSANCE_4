@@ -17,8 +17,9 @@
 		/**
 		 * method pren comme parametre
 		 * un tableau des post 
+		 *pour verifier l'authentification 
 		*/
-		//methode verifier l'authentification 
+		
 		public  function auth($tab)
 		{
 			$rep=false;
@@ -33,15 +34,14 @@
 						break;
 					}	
 			    }
-			    /*
-			    *Attention il faut changer le serveur
-			    */
 			if ($rep) {
 				return true;
 			} else {
 				return false;
 			}
 		}
+
+		//fonction permet d'augmenter le score d'un joueur gagnant
 		public  function AugmentScore()
 		{
 			$b=$_SESSION["login"];
@@ -62,6 +62,7 @@
 			}
 		}
 
+        //fonction pour valider l'inscription
 		public function Inscription($tab)
 		{
 			$nom = $tab['nom'];
@@ -86,6 +87,7 @@
 		   
 		}
 
+        //fonction permet de lister touts les joueurs selon leurs score
 		public function RecupererListe()
 		{
 
