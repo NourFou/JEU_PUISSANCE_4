@@ -18,6 +18,7 @@
 		 * method pren comme parametre
 		 * un tableau des post 
 		 *pour verifier l'authentification 
+		 *
 		*/
 		
 		public  function auth($tab)
